@@ -236,7 +236,7 @@ body {
   display: none;
 }
 
-/*past section*/
+/* past section */
 .gallery {
   display: flex;
   flex-direction: column;
@@ -524,10 +524,6 @@ footer {
     color: #d3d3d3;
     font-size: 17px;
   }
-  
-  .see_more p a:hover {
-    color: #ec5242;
-  }
 
   .social ul li a {
     text-decoration: none;
@@ -572,6 +568,10 @@ footer {
     text-decoration: none;
     color: #272a31;
     transition: color 0.8s ease-in-out, box-shadow 0.8s ease-in-out;
+  }
+
+  .see_more p a:hover {
+    color: #ec5242;
   }
 
   .list_navs ul li a:hover {
