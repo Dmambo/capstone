@@ -13,7 +13,7 @@ list.addEventListener('click', () => {
 
 // declaring a div shorcut function
 
-//   declaration of object 
+//   declaration of object
 
 const speakerData = [
   {
@@ -67,12 +67,12 @@ function iDiv(f = 'div') {
   }
 
   return document.createElement(f);
-};
+}
 
 function featureSpeakers() {
   const speakers = document.getElementById('grid_speaker');
   speakerData.forEach((speaker) => {
-    // create a parent div 
+    // create a parent div
     const speak = iDiv();
     speak.classList.add('speaker');
 
@@ -81,7 +81,7 @@ function featureSpeakers() {
     images.classList.add('speaker-img');
     images.innerHTML = `<img class='speaker-img' src='${speaker.Image}' alt='${speaker.Name}'/>`;
 
-    // create detail tag 
+    // create detail tag
     const detail = iDiv();
     detail.classList.add('details');
 
@@ -89,25 +89,24 @@ function featureSpeakers() {
     const name = iDiv('h2');
     name.classList.add('names');
     name.innerText = speaker.Name;
-        
+
     // create work tag
     const work = iDiv('h4');
     work.classList.add('work');
     work.innerText = speaker.Work;
 
-    // create quate tag 
+    // create quate tag
     const quote = iDiv('p');
     quote.classList.add('quote');
     quote.innerText = speaker.Quote;
 
     detail.append(name, work, quote);
-    speak.append(images, detail)
+    speak.append(images, detail);
     speakers.appendChild(speak);
   });
-
 
 }
 
 window.onload = () => {
-    featureSpeakers();
+  featureSpeakers();
 };
