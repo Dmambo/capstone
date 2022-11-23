@@ -127,9 +127,9 @@ body {
 }
 
 .head_content h3 {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 15px;
 }
 
 .head_content h2 {
@@ -659,9 +659,9 @@ footer {
   }
 
   .head_content h3 {
-    font-size: 60px;
+    margin-top: 20px;
+    font-size: 30px;
     font-weight: 400;
-    width: 100%;
   }
 
   .head_content h2 {

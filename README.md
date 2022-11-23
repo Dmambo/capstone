@@ -42,7 +42,7 @@
 
 > Here is a link to deployed project.
 
-- [Live Demo Link]()
+- [Live Demo Link](https://dmambo.github.io/capstone/)
 
 > Here is a link to loom video.
 
