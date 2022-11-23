@@ -236,7 +236,7 @@ body {
   display: none;
 }
 
-/*past section */
+/*past section*/
 .gallery {
   display: flex;
   flex-direction: column;
@@ -520,12 +520,15 @@ footer {
     margin-right: 20px;
   }
 
-  
   .see_more p a {
     color: #d3d3d3;
     font-size: 17px;
   }
   
+  .see_more p a:hover {
+    color: #ec5242;
+  }
+
   .social ul li a {
     text-decoration: none;
     color: white;
@@ -697,10 +700,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-  }
-
-  .see_more p a:hover {
-    color: #ec5242;
   }
 
   .btn_submit {

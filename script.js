@@ -104,7 +104,6 @@ function featureSpeakers() {
     speak.append(images, detail);
     speakers.appendChild(speak);
   });
-
 }
 
 window.onload = () => {
