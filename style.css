@@ -237,6 +237,26 @@ body {
 }
 
 /* past section */
+.past_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 18px;
+  gap: 0;
+}
+
+.past_text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .gallery {
   display: flex;
   flex-direction: column;
