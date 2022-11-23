@@ -46,7 +46,7 @@
 
 > Here is a link to loom video.
 
-- [Loom Video Link]()
+- [Loom Video Link](https://www.loom.com/share/104acd81caeb4ec3afa893a6e5700f6b)
 
 
 <!-- GETTING STARTED -->
