@@ -10,7 +10,6 @@
 html,
 body {
   overflow-x: hidden;
-  background: linear-gradient(to left, #c888cf 25%, #f0b0ab 75%);
 }
 
 body {
@@ -20,7 +19,7 @@ body {
 /* navigation section */
 .navbar {
   display: flex;
-  margin: 20px 24px;
+  margin: 0 24px;
   justify-content: space-between;
 }
 
@@ -29,6 +28,7 @@ body {
 }
 
 .ham {
+  margin-top: 20px;
   font-size: 34px;
   font-weight: 400;
   display: flex;
@@ -50,8 +50,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.99;
-  backdrop-filter: blur(15px);
+  opacity: 1;
+  backdrop-filter: blur(18px);
   mix-blend-mode: multiply;
   transform: translateX(100%);
   transition: all 0.5s linear;
@@ -111,10 +111,11 @@ body {
 
 /* hero section */
 .head {
-  background-image: url("./images/mobileba.png");
+  background-image: url("./images/newbg.png");
   background-size: cover;
   background-repeat: no-repeat;
   top: 0;
+  min-height: 40vh;
 }
 
 .head_content {
@@ -153,7 +154,7 @@ body {
 }
 
 .invite_date {
-  margin: 24px;
+  margin: 34px;
 }
 
 .invite_date h2 {
@@ -203,6 +204,14 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+
+.orange {
+  margin-top: 10px;
+  width: 50px;
+  background-color: orange;
+  height: 5px;
+  margin-bottom:  10px;
 }
 
 .logo_content h4 {
@@ -308,8 +317,10 @@ body {
 }
 
 .programs {
-  margin-top: 60px;
-  background-color: #272a31;
+  /* margin-top: 60px; */
+  background-image: url("./images/prog.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
 }
 
@@ -324,27 +335,45 @@ body {
   font-size: 16px;
 }
 
+.programmer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+}
+
 .program_list {
   display: flex;
+  flex-direction: row;
   padding: 18px;
-  gap: 22px;
+  /* gap: 22px; */
   justify-content: space-between;
   color: white;
   background: rgba(94, 93, 93, 0.4);
-  margin: 24px;
+  margin: 0 15px;
 }
 
-.program_list img {
-  width: 34px;
+.program_img {
+  width: 40px;
   height: 34px;
+  align-self: center;
+  margin: 10px 0;
 }
 
-.program_list h3 {
+.program-name {
   color: #ec5242;
+  text-align: center;
+  align-self: center;
+  margin: 10px 0;
+  width: 40%;
+  font-size: 1.1rem;
 }
 
-.program_list p {
+.program-desc {
   font-size: 12px;
+  text-align: left;
+  align-self: center;
+  width: 50%;
 }
 
 .btn_submit {
@@ -558,7 +587,7 @@ footer {
 
   .navbar {
     margin: 0;
-    gap: 80px;
+    gap: 10px;
     background-color: white;
     margin-bottom: 20px;
     border-bottom: 5px solid #e9e4e4;
@@ -568,7 +597,8 @@ footer {
   .list_navs {
     display: flex;
     justify-content: space-between;
-    margin-right: 80px;
+    margin: auto;
+    justify-content: center;
   }
 
   .list_navs ul {
@@ -582,6 +612,8 @@ footer {
   .list_navs ul li {
     margin-left: 54px;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .list_navs ul li a {
@@ -601,6 +633,7 @@ footer {
 
   .logoo {
     position: relative;
+    margin-right: 130px;
   }
 
   .text {
@@ -622,7 +655,7 @@ footer {
 
   .logoimg {
     display: flex;
-    margin-left: 80px;
+    margin-left: 20px;
     transition: 1s ease;
     backface-visibility: hidden;
   }
@@ -644,6 +677,7 @@ footer {
 
   .navv {
     display: flex;
+    max-width: 900px;
   }
 
   .ham {
@@ -654,7 +688,7 @@ footer {
     background-color: #e9e4e4;
     border: 3px solid #ec5242;
     padding: 5px;
-    margin-left: 30px;
+    margin-left: 50px;
     color: #ec5242;
     margin-top: 10px;
     font-size: 16px;
@@ -701,8 +735,10 @@ footer {
 
   .programmer {
     display: flex;
+    flex-direction: row;
     margin-right: 150px;
     margin-left: 150px;
+    margin-bottom: 50px;
   }
 
   .program_list {
@@ -713,6 +749,17 @@ footer {
     margin-left: 0;
     margin-right: 5px;
     padding: 40px 30px;
+  }
+
+  .program-name {
+    width: 100%
+  }
+
+  .program-desc {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    font-size: 14px
   }
 
   .see_more {
