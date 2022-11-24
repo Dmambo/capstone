@@ -11,7 +11,6 @@ list.addEventListener('click', () => {
 
 // Adding the feature speakers dynamically
 
-// declaring a div shorcut function
 
 //   declaration of object
 
@@ -61,6 +60,7 @@ const speakerData = [
 
 ];
 
+// declaring a div shorcut function
 function iDiv(f = 'div') {
   if (!f) {
     f = 'div';
