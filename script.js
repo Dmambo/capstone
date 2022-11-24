@@ -11,7 +11,6 @@ list.addEventListener('click', () => {
 
 // Adding the feature speakers dynamically
 
-
 //   declaration of object
 
 const speakerData = [
